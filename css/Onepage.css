@@ -1,0 +1,372 @@
+body{
+        text-align:center;
+        width:100%;
+        font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+        background-color:#0e0242;
+}
+             /* ----------------Navigation Bar here---------------------*/
+
+
+a {
+        text-decoration: none;
+        align-items: center;
+}
+             
+nav {
+        font-family: 'Heebo', sans-serif;
+        align-items: center;
+        width:100%;
+        text-align:center;
+        height:70px;
+        line-height:20px;
+        display:none;
+        margin-right:400px;
+        font-size:17px;
+        color:#084B8A;
+        font-weight:bold;
+        border-radius: 50px 75px;
+        }
+              
+    ul {
+        background: rgb(43, 15, 197);
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        }
+              
+    li {
+        color: #fff;
+        background: rgb(61, 42, 231);
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    li a {
+        color: #fff;
+    }
+    li:hover, li:focus-within {
+        background: rgb(138, 134, 134);
+        cursor: pointer;
+    }
+    li:focus-within a {
+        outline: none;
+    }      
+    ul li ul {
+        background: rgb(61, 35, 206);
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+        border: 10px 15px;
+}
+ul li:hover > ul,
+        ul li:focus-within > ul,
+        ul li ul:hover,
+        ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block
+}
+ul li ul li {
+        clear: both;
+        width: 100%;
+}
+/*--------------------------End of Nav Bar -------------------------*/        
+
+#header{
+        width:100%;
+        margin:0;
+        padding:0;
+        text-align:center;
+        height:70px;
+        line-height:70px;
+}
+#header li{
+        display:inline-block;
+        margin-right:25px;
+        font-size:17px;
+        color:#084B8A;
+        font-weight:bold;
+        cursor:pointer;
+}
+#home,#about,#contact, #Services, #Gallary{
+        margin-top:30px;
+        width:90%;
+        overflow: hidden;
+        height:400px;
+        margin-left:5%;
+        padding:50px;
+        box-sizing:border-box;
+        background-color:#084B8A;
+        border-radius:10px;
+        color:white;
+}
+#about{
+        margin-top:50px;
+        width:90%;
+        height:350px;
+        margin-left:5%;
+        padding:20px;
+        box-sizing:border-box;
+        background-color:#084B8A;
+        border-radius:10px;
+        color:white;
+        overflow: hidden;
+}
+#Services{
+        margin-top:50px;
+        width:90%;
+        height: 150px;
+        margin-left:5%;
+        padding:30px;
+        box-sizing:border-box;
+        background-color:#2b7fce;
+        border-radius:10px;
+        font-size: 16px;
+        color:white;
+}
+
+/*Introduce here 3 boxes with content and hover effect*/
+
+.service-tittle {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 250, 248);
+    letter-spacing: 1.3rem;
+    padding-top: 90px;
+    padding-bottom: 0;   
+}
+.service-tittle hr {
+    width: 50%;
+    margin-left: 25%;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(#0e0242,#1307c2 50%,#0e0242 100%,#fff 100%);
+}
+.services .box {
+    position: relative;
+    width: 280px;
+    background: rgb(221, 219, 219);
+    padding: 100px 40px 60px;
+    margin: 10rem 9rem;
+    box-shadow: 0 15px 45px rgba(0,0,0, .3);
+}
+.services .box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(89, 74, 228);
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+.services .box:hover:before {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+.services .box h2 {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: .2;
+    transition: .5s;
+}
+.services .box:hover h2 {
+    opacity: 1;
+    color: rgb(250, 71, 71);
+    transform: translateY(-40px);
+}
+.services .box h3 {
+    position: relative;
+    font-size: 2em;
+    z-index: 2;
+    color: rgb(37, 37, 37);
+    transition: .5s;
+}
+.services .box:hover h3 {
+    color: seashell;
+}
+.services .box .boxp {
+    position: relative;
+    font-size: 1em;
+    z-index: 2;
+    color: rgb(37, 37, 37);
+    transition: .5s;
+    letter-spacing: .1em;
+}
+.services .box:hover h3,
+.services .box:hover .boxp {
+    color: #fff;
+}
+.section-title {
+  width: 50%;
+  padding-top: 4rem;
+  align-items: center;
+  font-size: 80px;
+  margin-left: 40%;
+  color:rgb(255, 255, 255)
+}
+.section-title1 {
+  width: 50%;
+  align-items: center;
+  font-size: 80px;
+  margin-left: 38%;
+  color: black
+}
+
+/* End of Boxes*/
+
+/*------------------Gallery-----------*/
+
+#Gallery{
+    margin-top:50px;
+    width:90%;
+    height:200px;
+    margin-left:5%;
+    padding:50px;
+    box-sizing:border-box;
+    background-color:#084B8A;
+    border-radius:10px;
+    color:white;
+}
+#home h1{
+        font-size:40px;
+}
+#home p{
+        font-size:20px;
+}
+#about p{
+        font-size:20px;
+}
+/*-----------------------Contact form-----*/
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100vh;
+  }
+  .contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .contact .content .row .card{
+    background: linear-gradient(180deg, #03A9F4, #F441A5, #FFEB3B);
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+  }
+  .contact .content .row .card .contact-icon{
+    color: #FFFFFF;
+    font-size: 4em;
+    text-align: center;
+    transition: transform 0.5s ease;
+  }
+  .contact .content .row .card:hover .contact-icon{
+    transform: translateY(-10px);
+  }
+  .contact .content .row .card .info{
+    text-align: center;
+  }
+  .contact .content .row .card .info h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+  }
+  .contact .content .row .card .info span{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+  .contact-form{
+    background: linear-gradient(0deg, #03A9F4, #F441A5, #FFEB3B);
+    max-width: 600px;
+    margin-top: 60px;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+  }
+  .contact-form h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-form .input-box input,
+  .contact-form .input-box textarea{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    resize: none;
+  }
+  .contact-form .input-box .send-btn{
+    background: linear-gradient(25deg, #03A9F4, #F441A5, #FFEB3B);
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .contact-form .input-box .send-btn:hover{
+    background: #C9D3FF;
+  }
+
+
+
+
+
+/*-----------footer----*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient( rgb(27, 27, 116), grey, blue);)
+    color: white;
+    text-align: center;
+ }
+
+ 
